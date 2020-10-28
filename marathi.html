@@ -391,7 +391,6 @@ display:none;
     color:#fff;
 
 }
-	    
 @media(max-width:1054px){
 	nav ul{
                     width:0%;
@@ -409,14 +408,14 @@ display:none;
                 }
                 nav ul li a{
                     font-size:20px;
-                    color:white;
+                    color:black;
                 }
                 .check{
                     display:block;
                 }
                 nav ul li a{
                     font-size:20px;
-                    color:white;
+                    color:black;
                 }
                 .check{
                     display:block;                    
@@ -428,26 +427,51 @@ display:none;
                 position:absolute;
                 width:100%;
                 top: 0;
-			    transform: translate(-8%,0%);
+			    transform: translate(-10%,0%);
                 height:60px;
                 background-color:#1c2833;
                 color:white;
             }
+			nav .webname{
+             display:none;  
+			}
+			 #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 400px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+      
+            }
+			#dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
 			
 		.home{
     position:absolute;
-    top:6%;
+    top:9%;
     left:0%;
-    padding:20px;
+    padding:1px;
 }
 .nav1{
     list-style-type:none;
 display:inline-block;
-padding:10px 20px;
+padding:2px 10px;
 border:1px solid ;
-margin:5px;
+margin:2px;
 transition:1s;
-transform:translate(-20%,-50%);
+transform:translate(10%,-50%);
 font-size: 17px;
  
 }
@@ -468,8 +492,8 @@ font-size: 17px;
 
  .box{
         position:relative;
-		width:45%; 
-        height:50px;
+		width:85%; 
+        height:10px;
         transform-style:preserve-3d;
         animation:animate 11s linear infinite;
     }
@@ -481,11 +505,7 @@ font-size: 17px;
             display: flex;
             float:left;
           }
-          nav .webname{
-             
-                margin:15px 0px 15px 30px;
-                font-size:30px;
-            }
+     
             #search{
                 position:relative;
                 margin-top:10px;
@@ -502,8 +522,6 @@ font-size: 17px;
             }
         
         }
-		 
-
 
     </style>
  	</head>
