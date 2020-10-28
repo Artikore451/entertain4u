@@ -335,14 +335,12 @@ display:none;
 
 }
 
-
-      
-@media(max-width:1054px){
-                nav ul{
+			@media(max-width:1054px){
+	nav ul{
                     width:0%;
                     position:fixed;
                     height:200px;
-                    top:60px;
+                    top:200px;
                     left:100%;
                     text-align:center;
                     background-color:#2c3e50;
@@ -354,14 +352,14 @@ display:none;
                 }
                 nav ul li a{
                     font-size:20px;
-                    color:white;
+                    color:black;
                 }
                 .check{
                     display:block;
                 }
                 nav ul li a{
                     font-size:20px;
-                    color:white;
+                    color:black;
                 }
                 .check{
                     display:block;                    
@@ -369,6 +367,7 @@ display:none;
                 #btn:checked~ul{
                    left:70%;
                 }
+		
 				.container nav{
                 position:absolute;
                 width:100%;
@@ -379,17 +378,118 @@ display:none;
 				transform: translate(-1%,0%);
 				width:113%;
             }
+			nav .webname{
+             display:none;  
+			}
+			 #dark-change{
+            position: absolute;
+            width: 48px;
+            height: 25px;
+            right: 400px;
+            top: 20px;
+            border: 2px solid;
+            border-radius: 20px;
+      
             }
-         
-@media(max-width:1054px){
-          .respon{
+			#dark-change:before{
+            position: absolute;
+            content: '';
+            width:18px;
+            height: 18px;
+            left: 1px;
+            top: 2px;
+            border-radius: 90%;
+            background: #fff;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+			
+		.home{
+    position:absolute;
+    top:9%;
+    left:0%;
+    padding:1px;
+}
+.nav1{
+    list-style-type:none;
+display:inline-block;
+padding:2px 10px;
+border:1px solid ;
+margin:2px;
+transition:1s;
+transform:translate(10%,-50%);
+font-size: 17px;
+ 
+}
+ 
+.nav1:hover{
+    background-color:#1c2833
+}
+.nav1 a{
+    text-decoration:none;
+    color:rgb(66, 133, 40);
+    width:100%;
+	height:20%;
+}
+ 
+ .nav1:hover a, li a:hover{
+     color:#fff;
+ }
+
+ .box{
+        position:relative;
+		width:85%; 
+        height:10px;
+        transform-style:preserve-3d;
+        animation:animate 11s linear infinite;
+    }
+	.main{
+    		padding: 20px 0;
+            width:90%;
+            transform: translate(6%,0%);
+    	}
+        .album-poster1{
+    		position: relative;
+    		display: block;
+    		border-radius: 14px;
+    		overflow: hidden;
+            height:100%;
+            align-items:center;
+    		box-shadow: 0 15px 35px #619690;
+            transform:translate(10%,2%);
+    		transition: all ease 0.4s;
+    	}
+
+        .album-poster2{
+    		position: relative;
+    		display: block;
+    		border-radius: 14px;
+    		overflow: hidden;
+            height:100%;
+            align-items:center;
+            transform:translate(10%,25%);
+    		box-shadow: 0 15px 35px #619690;
+    		transition: all ease 0.4s;
+    	}
+   
+        .album-poster3{
+    		position: relative;
+    		display: block;
+    		border-radius: 14px;
+    		overflow: hidden;
+            height:100%;
+            align-items:center;
+            transform:translate(10%,50%);
+    		box-shadow: 0 15px 35px #619690;
+    		transition: all ease 0.4s;
+    	}
+       }
+            @media screen and (min-width:1054px) {
+				.respon{
             display: flex;
             float:left;
           }
-		  nav .webname{
-             display:none;  
-			}
-
+     
             #search{
                 position:relative;
                 margin-top:10px;
@@ -404,33 +504,8 @@ display:none;
                 float:right;
                 z-index:0;
             }
- 
         
         }
-
-
-		#back-to-top-btn{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    font-size:26px;
-    width:50px;
-    height:50px;
-    background-color:#fff;
-    color:#333;
-    cursor:pointer;
-    outline:none;
-    border:3px solid #333;
-    border-radius:50%;
-    transition-duration:0.2s;
-    transition-timing-function:ease-in-out;
-    transition-property: background-color, color;
-}
-#back-to-top-btn:hover, #back-to-top-btn:focus{
-    background-color:#333;
-    color:#fff;
-
-}
 
 
 
@@ -505,7 +580,7 @@ display:none;
 
 <div class="main">
 	<div class="container">
-		<div class="row" style="transform: translate(0%,-4%)">
+		<div class="row" style="transform: translate(0%,-2%)">
 			<div class="col-md-12">
 				<h3>Hollywood Movies</h3>
 			</div>
